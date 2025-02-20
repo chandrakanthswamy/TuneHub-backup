@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0d0d0d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+h2 {
+    color: #0096ff;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px rgba(0, 150, 255, 0.8);
+    animation: glitch 1.5s infinite;
+}
+
+form {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.2);
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    animation: techPulse 1s infinite alternate;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-column, .right-column {
+    width: 45%;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #aaa;
+    text-align: left;
+    animation: flicker 2s infinite;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    background: #333;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 8px rgba(0, 150, 255, 0.1);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.gender-options, .role-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 150, 255, 0.3);
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+input[type="submit"] {
+    background: #0096ff;
+    color: #0d0d0d;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes techPulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 150, 255, 0.2), 0 0 20px rgba(0, 150, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 40px rgba(0, 150, 255, 0.4), 0 0 40px rgba(0, 150, 255, 0.4);
+    }
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px #0096ff, 0 0 20px #0096ff, 0 0 30px #0096ff, 0 0 40px #0096ff, 0 0 50px #0096ff;
+    }
+    100% {
+        text-shadow: 0 0 20px #0096ff, 0 0 30px #0096ff, 0 0 40px #0096ff, 0 0 50px #0096ff, 0 0 60px #0096ff;
+    }
+}
+
+@keyframes flicker {
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        opacity: 1;
+    }
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0;
+    }
+}
+

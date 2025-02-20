@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Login</title>
+		<link rel=stylesheet type=text/css th:href="@{/login.css}">
+	</head>
+	<body>
+		<form action="validate" method="post">
+			
+		<h2>USER LOGIN</h2>
+		
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email" required><br><br>
+		       
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" name="password" required><br><br>
+		
+		<a href="forgot-password" class="forgot-password">Forgot Password?</a><br><br>
+		
+		<input type="submit" value="LOGIN">
+		</form>       
+	</body>
+</html>

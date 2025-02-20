@@ -1,0 +1,50 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto; /* Add vertical scroll */
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #4facfe;
+}
+
+th {
+    background-color: #0096ff;
+    color: #fff;
+    text-transform: uppercase;
+    animation: glitch 1.5s infinite;
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+tr:hover {
+    background-color: #333;
+}
+
+audio {
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+}
+

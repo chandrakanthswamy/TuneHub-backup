@@ -1,0 +1,88 @@
+/* createplaylist.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto; /* Added vertical scroll */
+}
+
+form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+    overflow-y: auto; /* Added scrolling */
+    max-height: 80vh; /* Limit height to 80% of viewport */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #f3f3f3;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+input[type="text"] {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 12px rgba(0, 150, 255, 0.8);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e55d50;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

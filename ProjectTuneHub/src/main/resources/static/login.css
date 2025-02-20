@@ -1,0 +1,123 @@
+/* login.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('ProjectTuneHub/src/main/resources/static/-spacebackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f3f3f3;
+    overflow: hidden;
+    animation: backgroundShift 15s infinite linear;
+}
+
+form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 150, 255, 0.5);
+    width: 420px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: glitch 1.5s infinite;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #f3f3f3;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #0096ff;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.8);
+}
+
+input[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 12px 20px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s, box-shadow 0.4s;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+input[type="submit"]:hover {
+    background-color: #e55d50;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backgroundShift {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px #0096ff, 0 0 20px #0096ff, 0 0 30px #0096ff, 0 0 40px #0096ff, 0 0 50px #0096ff;
+    }
+    100% {
+        text-shadow: 0 0 20px #0096ff, 0 0 30px #0096ff, 0 0 40px #0096ff, 0 0 50px #0096ff, 0 0 60px #0096ff;
+    }
+}
+.forgot-password {
+    color: #0096ff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
